@@ -5,6 +5,7 @@ import SeoForm from '@/components/SeoForm'
 import SeoReport from '@/components/SeoReport'
 import { AnalyzeResponse } from '@/types/seo'
 import { AlertCircle, Loader2 } from 'lucide-react'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 export default function Home() {
   const [result, setResult] = useState<AnalyzeResponse | null>(null)
@@ -18,6 +19,11 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background py-10 px-4">
+      {/* Dark mode toggle — top right */}
+      <div className="fixed top-4 right-4">
+        <ThemeToggle />
+      </div>
+
       <div className="max-w-2xl mx-auto space-y-8">
 
         <div className="text-center space-y-1">
