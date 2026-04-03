@@ -84,7 +84,7 @@ export default function SeoForm({ onResult, onLoading, onError }: SeoFormProps) 
             />
           </div>
           <Button type="submit" className="w-full" disabled={submitting || !url.trim() || !keyword.trim()}>
-            {submitting ? 'Searching...' : 'Analyze me and Search'}
+            {submitting ? 'Analyzing...' : 'Analyze Page'}
           </Button>
         </form>
       </CardContent>
